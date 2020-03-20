@@ -1,0 +1,15 @@
+{
+  "dependencies": [
+    {
+      "source": {
+        "git": {
+          "remote": "https://github.com/ojhughes/simplek8s-libsonnet",
+          "subdir": ""
+        }
+      },
+      "version": "master",
+      "name": "service-deployment"
+    }
+  ],
+  "legacyImports": true
+}
