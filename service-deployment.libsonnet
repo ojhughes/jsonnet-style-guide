@@ -5,7 +5,9 @@
   dockerImage:: error "dockerImage must be specified",
 
   // Optional arguments for this template.
-  serviceConf:: {},
+  serviceConf:: {
+    envVarName:: error "seviceConf.envVarName must be specified"
+  },
   resources:: {
     requests: {
       memory: "250Mi",
@@ -51,7 +53,7 @@
               image: $.dockerImage,
               resources: $.resources,
               env: {
-                name: "SERVICE_CONF",
+                name: $.serviceConf.envVarName,
                 value: std.manifestJson($.serviceConf),
               },
               // Some fields omitted for brevity -- you can refer to
