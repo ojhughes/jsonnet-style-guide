@@ -1,6 +1,6 @@
 # Simple Kubernetes deployment generation using Jsonnet
 
-## Dependencies
+## Local Dependencies to run example
 * [Jsonnet](https://jsonnet.org/)
 * [Jsonnet Bundler](https://github.com/jsonnet-bundler/jsonnet-bundler)
 * [yq](https://mikefarah.gitbook.io/yq/)
